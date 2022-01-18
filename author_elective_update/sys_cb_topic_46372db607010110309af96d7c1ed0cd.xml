@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="DELETE">
+        <applicability/>
+        <applicability_mode>script</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>3efd22da0b203300a1b16c2367673a10</category>
+        <channels/>
+        <connect_queue/>
+        <description>ITSM conversation for creating incidents using Record Producer</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "8cc7548403c94610916c98932dab6a49": {
+          "id": "8cc7548403c94610916c98932dab6a49",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "c358dd91bec741b4a24a753bd9c48d7a": {
+          "id": "c358dd91bec741b4a24a753bd9c48d7a",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "31c63cea62b949c3abb4038b4706a017",
+          "edgeType": "Edge",
+          "source": "8cc7548403c94610916c98932dab6a49",
+          "target": "c358dd91bec741b4a24a753bd9c48d7a",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "26bcca52fd6840a6a12685b166fed50a": {
+      "id": "26bcca52fd6840a6a12685b166fed50a",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": ""
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <key_phrases>Report IT Issue,create,open,incident,ticket,issue,broken,help,IT</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>Report IT Issue (Template)</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 09:20:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>46372db607010110309af96d7c1ed0cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Report IT Issue (Template)</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_46372db607010110309af96d7c1ed0cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 09:20:58</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="DELETE" query="document_key=46372db607010110309af96d7c1ed0cd"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>9ad193881b54741032182f8dee4bcbc2</instance_id>
+        <instance_name>dev117559</instance_name>
+        <name>sys_cb_topic_46372db607010110309af96d7c1ed0cd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic"><sys_cb_topic action="INSERT_OR_UPDATE"><applicability/><applicability_mode>script</applicability_mode><autopilot_topic>false</autopilot_topic><category>3efd22da0b203300a1b16c2367673a10</category><channels/><connect_queue/><description>ITSM conversation for creating incidents using Record Producer</description><expose_on_palette>false</expose_on_palette><flexible_conversation_switching>false</flexible_conversation_switching><graph>{
+  "graph_api_version": "1.0.36",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "8cc7548403c94610916c98932dab6a49": {
+          "id": "8cc7548403c94610916c98932dab6a49",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "c358dd91bec741b4a24a753bd9c48d7a": {
+          "id": "c358dd91bec741b4a24a753bd9c48d7a",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "31c63cea62b949c3abb4038b4706a017",
+          "edgeType": "Edge",
+          "source": "8cc7548403c94610916c98932dab6a49",
+          "target": "c358dd91bec741b4a24a753bd9c48d7a",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "26bcca52fd6840a6a12685b166fed50a": {
+      "id": "26bcca52fd6840a6a12685b166fed50a",
+      "name": "LiveAgent_application",
+      "value": {
+        "mode": "simple",
+        "value": ""
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph><key_phrases>Report IT Issue,create,open,incident,ticket,issue,broken,help,IT</key_phrases><library>false</library><live_agent>false</live_agent><name>Report IT Issue (Template)</name><nlu_intent/><nlu_intent_label/><nlu_model/><nlu_model_label/><nlu_provider/><palette_label/><roles/><source_topic_id/><sys_class_name>sys_cb_topic</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2022-01-18 09:20:08</sys_created_on><sys_domain>global</sys_domain><sys_id>46372db607010110309af96d7c1ed0cd</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Report IT Issue (Template)</sys_name><sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package><sys_policy/><sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope><sys_update_name>sys_cb_topic_46372db607010110309af96d7c1ed0cd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2022-01-18 09:20:58</sys_updated_on><triggerable_by_notification>false</triggerable_by_notification><type>STANDARD</type><variables/></sys_cb_topic><sys_variable_value action="delete_multiple" query="document_key=46372db607010110309af96d7c1ed0cd"/></record_update>]]></payload>
+        <payload_hash>-409516090</payload_hash>
+        <record_name>Report IT Issue (Template)</record_name>
+        <reverted_from/>
+        <source>feed129907010110309af96d7c1ed0a6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 09:20:58</sys_created_on>
+        <sys_id>da67e9b607010110309af96d7c1ed043</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17e6c7d4f550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 09:20:58</sys_updated_on>
+        <type>Topic</type>
+        <update_guid>d267e9b6e9010110bfd9f8d402325843</update_guid>
+        <update_guid_history>d267e9b6e9010110bfd9f8d402325843:-409516090,aa376d7a73010110c5e3084d463d555e:1656500873</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-01-18 09:25:20</sys_created_on>
+        <sys_db_object display_value="" name="sys_cb_topic">sys_cb_topic</sys_db_object>
+        <sys_id>4f20e5c424eb4cc0a7f2a4046fc41000</sys_id>
+        <sys_metadata>46372db607010110309af96d7c1ed0cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Report IT Issue (Template)</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_cb_topic_46372db607010110309af96d7c1ed0cd</sys_update_name>
+        <sys_update_version display_value="sys_cb_topic_46372db607010110309af96d7c1ed0cd">da67e9b607010110309af96d7c1ed043</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-01-18 09:25:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
